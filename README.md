@@ -1,8 +1,11 @@
+**Note: this is in a very alpha state.**
+
+
 ## Basic usage
 
 ```javascript
 
-import ViewPort, {watch}, from 'viewport';
+import ViewPort, {watch} from 'vport';
 
 const vp = new ViewPort;
 
