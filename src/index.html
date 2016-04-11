@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    body {
+      height: 100%;
+    }
+    .vp {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="vp1" class="vp"></div>
+  <div id="vp2" class="vp"></div>
+  <div id="vp3" class="vp"></div>
+  <div id="vp4" class="vp"></div>
+  <div id="vp5" class="vp"></div>
+  <div id="vp6" class="vp"></div>
+  <script src="main.js"></script>
+  <script>
+    var vp = new ViewPort();
+    vp.registerElements(document.querySelectorAll('.vp'), function () {
+      console.log('in viewport');
+    });
+  </script>
+</body>
+</html>
